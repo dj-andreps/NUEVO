@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilo específico para el campo de fecha */
+.input-fecha {
+    width: 150px; /* Ajusta el tamaño según lo necesario */
+}
+
+nav {
+    background-color: #004d40; /* Verde más oscuro */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #b2dfdb; /* Verde claro */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.button {
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #004d40; /* Verde más oscuro para el hover */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* Blanco para el hover */
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1 {
+    color: #060753; /* Verde oscuro */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #b2dfdb; /* Verde claro */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #004d40; /* Verde más oscuro */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #b2dfdb; /* Verde claro */
+}
+
+table tr:hover {
+    background-color: #80cbc4; /* Verde más suave */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #004d40; /* Verde más oscuro */
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #00796b; /* Verde oscuro para el foco */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40; /* Verde más oscuro para el hover */
+}
+
+.buttons {
+    text-align: center;
+}
+
+.button {
+    background-color: #00796b; /* Verde oscuro */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #004d40; /* Verde más oscuro para el hover */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+/* Ejemplo de estilo para el campo nivel_educativo */
+.nivel-inicial {
+    color: #00796b; /* Verde oscuro */
+    font-weight: bold;
+}
