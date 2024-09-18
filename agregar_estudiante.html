@@ -1,7 +1,3 @@
-<?php
-include_once("conexion.php");
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,9 +53,9 @@ include_once("conexion.php");
         <h1>Control de Asistencia - Pentágono School</h1>
     </header>
     <nav>
-        <a href="index.php">Página Principal</a>
-        <a href="registrar_asistencia.php">Registrar Asistencia</a>
-        <a href="consultar_asistencia.php">Consultar Asistencia</a>
+        <a href="index.html">Página Principal</a>
+        <a href="registrar_asistencia.html">Registrar Asistencia</a>
+        <a href="consultar_asistencia.html">Consultar Asistencia</a>
     </nav>
     <div class="content">
         <h1>Agregar Estudiante</h1>
@@ -95,31 +91,11 @@ include_once("conexion.php");
                 <option value="">Selecciona un grado</option>
             </select><br>
 
-            <input type="submit" name="btnAgregar" value="Agregar">
+            <input type="submit" value="Agregar">
         </form>
 
-        <?php
-        if (isset($_POST['btnAgregar'])) {
-            $nombre = $_POST['nombre'] ?? '';  
-            $apellido = $_POST['apellido'] ?? '';
-            $dni = $_POST['dni'] ?? '';
-            $apoderado = $_POST['apoderado'] ?? '';
-            $celular = $_POST['celular'] ?? '';
-            $parentesco = $_POST['parentesco'] ?? '';
-            $nivel_educativo = $_POST['nivel_educativo'] ?? '';
-            $grado = $_POST['grado'] ?? '';
-
-            $query = "
-            INSERT INTO estudiantes (nombres, apellidos, dni, apoderado, celular, parentesco, nivel_educativo, grado)
-            VALUES ('$nombre', '$apellido', '$dni', '$apoderado', '$celular', '$parentesco', '$nivel_educativo', '$grado')
-            ";
-            if (mysqli_query($conn, $query)) {
-                echo "<p>Estudiante agregado exitosamente.</p>";
-            } else {
-                echo "<p>Error: " . mysqli_error($conn) . "</p>";
-            }
-        }
-        ?>
+        <!-- Este es un lugar donde en PHP se mostraba la confirmación de que el estudiante fue agregado -->
+        <!-- Como HTML no soporta esto, se necesita PHP para enviar y recibir datos dinámicamente -->
     </div>
 </body>
 </html>
